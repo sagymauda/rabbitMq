@@ -1,0 +1,5 @@
+FROM openjdk:11
+COPY target/dashboard-server.jar app.jar
+COPY sceptre-6f0de-firebase-adminsdk-nz78w-0b7b3d7c0b.json firebase.json
+ENTRYPOINT ["java", "-jar", "app.jar"]
+

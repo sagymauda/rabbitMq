@@ -1,0 +1,26 @@
+version: '3'
+services:
+#  mongodb:
+#    image: "mongo:latest"
+#    ports:
+#      - "27017:27017"
+  rabbit:
+    image: "rabbitmq:3-management"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+#  redis:
+#    image: "redis:alpine"
+#    ports:
+#      - "6379:6379"
+#  dashboard:
+#    build: .
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#      - GOOGLE_APPLICATION_CREDENTIALS=firebase.json
+#    depends_on:
+#      - mongodb
+#      - rabbit
+#      - redis
